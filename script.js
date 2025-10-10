@@ -1,0 +1,84 @@
+// ADD YOUR EPISODES HERE
+const episodesList = [
+    { number: 1, name: 'DOG & CHAINSAW', file: 'e1.mp4' },
+    // { number: 2, name: 'Episode Name Here', file: 'e2.mp4' },
+    // { number: 3, name: 'Episode Name Here', file: 'e3.mp4' },
+];
+
+const videoPlayer = document.getElementById('video-player');
+const currentEpisodeTitle = document.getElementById('current-episode');
+const episodesListEl = document.getElementById('episodes-list');
+const episodeCount = document.getElementById('episode-count');
+
+let episodes = [];
+let currentEpisodeIndex = 0;
+
+function loadEpisodes() {
+    episodes = episodesList.map(ep => ({
+        number: ep.number,
+        name: ep.name,
+        path: ep.file,
+        file: ep.file
+    }));
+    
+    renderEpisodes();
+    updateEpisodeCount();
+    
+    if (episodes.length > 0) {
+        playEpisode(episodes[0], 0);
+    }
+}
+
+function renderEpisodes() {
+    episodesListEl.innerHTML = '';
+
+    if (episodes.length === 0) {
+        episodesListEl.innerHTML = '<p style="color: #aaa; text-align: center; grid-column: 1/-1;">No episodes found</p>';
+        return;
+    }
+
+    episodes.forEach((episode, index) => {
+        const card = document.createElement('div');
+        card.className = 'episode-card';
+        card.innerHTML = `
+            <div class="episode-number">Episode ${episode.number}</div>
+            <div class="episode-name">${episode.name}</div>
+        `;
+        card.addEventListener('click', () => playEpisode(episode, index));
+        episodesListEl.appendChild(card);
+    });
+}
+
+function playEpisode(episode, index) {
+    videoPlayer.src = episode.path;
+    videoPlayer.load();
+    videoPlayer.play();
+    currentEpisodeTitle.textContent = `Episode ${episode.number}: ${episode.name}`;
+    currentEpisodeIndex = index;
+
+    const cards = document.querySelectorAll('.episode-card');
+    cards.forEach(card => card.classList.remove('active'));
+    if (cards[index]) {
+        cards[index].classList.add('active');
+    }
+}
+
+function updateEpisodeCount() {
+    episodeCount.textContent = `Episodes: ${episodes.length}`;
+}
+
+videoPlayer.addEventListener('ended', () => {
+    if (currentEpisodeIndex < episodes.length - 1) {
+        playEpisode(episodes[currentEpisodeIndex + 1], currentEpisodeIndex + 1);
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft' && currentEpisodeIndex > 0) {
+        playEpisode(episodes[currentEpisodeIndex - 1], currentEpisodeIndex - 1);
+    } else if (e.key === 'ArrowRight' && currentEpisodeIndex < episodes.length - 1) {
+        playEpisode(episodes[currentEpisodeIndex + 1], currentEpisodeIndex + 1);
+    }
+});
+
+loadEpisodes();
