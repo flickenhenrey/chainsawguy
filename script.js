@@ -7,7 +7,7 @@ const episodesList = [
     { number: 4, name: 'RESCUE', file: 'https://files.catbox.moe/pja70n.mp4' },
     { number: 5, name: 'GUN DEVIL', file: 'https://files.catbox.moe/rokxof.mp4' },
     { number: 6, name: 'KILL DENJI', file: 'https://files.catbox.moe/dkj5vx.mp4' },
-    // { number: 7, name: 'EPISODE 7', file: 'https://files.catbox.moe/placeholder7.mp4' },
+    { number: 7, name: 'THE TASTE OF A KISS', file: 'https://files.catbox.moe/c2e1ij.mp4' },
     // { number: 8, name: 'EPISODE 8', file: 'https://files.catbox.moe/placeholder8.mp4' },
     // { number: 9, name: 'EPISODE 9', file: 'https://files.catbox.moe/placeholder9.mp4' },
     // { number: 10, name: 'EPISODE 10', file: 'https://files.catbox.moe/placeholder10.mp4' },
