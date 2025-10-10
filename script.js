@@ -7,7 +7,7 @@ const episodes = [
     { number: 2, name: 'ARRIVAL IN TOKYO', file: 'https://files.catbox.moe/racwx7.mp4' },
     { number: 3, name: 'MEOWYS WHEREABOUTS', file: 'https://files.catbox.moe/yiy0f8.mp4' },
     { number: 4, name: 'RESCUE', file: 'https://files.catbox.moe/pja70n.mp4' },
-    // { number: 5, name: 'EPISODE 5', file: 'https://files.catbox.moe/placeholder5.mp4' },
+    { number: 5, name: 'GUN DEVIL', file: 'https://files.catbox.moe/rokxof.mp4' },
     // { number: 6, name: 'EPISODE 6', file: 'https://files.catbox.moe/placeholder6.mp4' },
     // { number: 7, name: 'EPISODE 7', file: 'https://files.catbox.moe/placeholder7.mp4' },
     // { number: 8, name: 'EPISODE 8', file: 'https://files.catbox.moe/placeholder8.mp4' },
