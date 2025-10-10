@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="anime-title">CWM</h1>
+            <div class="anime-info">
+                <span id="episode-count">Episodes: Loading...</span>
+            </div>
+        </header>
+
+        <div class="player-section">
+            <div class="video-container">
+                <video id="video-player" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 id="current-episode">Select an episode to start watching</h2>
+            </div>
+        </div>
+
+        <div class="episodes-section">
+            <h3>Episodes</h3>
+            <div id="episodes-list" class="episodes-grid">
+                <!-- Episodes will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
