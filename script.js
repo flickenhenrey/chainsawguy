@@ -2,7 +2,7 @@
 // Upload videos to catbox.moe and paste the direct links here
 const episodesList = [
     { number: 1, name: 'DOG & CHAINSAW', file: 'https://files.catbox.moe/f4bo3s.mp4' },
-    // { number: 2, name: 'Episode Name Here', file: 'https://files.catbox.moe/YOUR_FILE_HERE.mp4' },
+    { number: 2, name: 'ARRIVAL IN TOKYO', file: 'https://files.catbox.moe/racwx7.mp4' },
     // { number: 3, name: 'Episode Name Here', file: 'https://files.catbox.moe/YOUR_FILE_HERE.mp4' },
 ];
 
