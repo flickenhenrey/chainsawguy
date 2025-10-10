@@ -1,8 +1,9 @@
 // ADD YOUR EPISODES HERE
+// Upload videos to catbox.moe and paste the direct links here
 const episodesList = [
-    { number: 1, name: 'DOG & CHAINSAW', file: 'e1.mp4' },
-    // { number: 2, name: 'Episode Name Here', file: 'e2.mp4' },
-    // { number: 3, name: 'Episode Name Here', file: 'e3.mp4' },
+    { number: 1, name: 'DOG & CHAINSAW', file: 'https://files.catbox.moe/f4bo3s.mp4' },
+    // { number: 2, name: 'Episode Name Here', file: 'https://files.catbox.moe/YOUR_FILE_HERE.mp4' },
+    // { number: 3, name: 'Episode Name Here', file: 'https://files.catbox.moe/YOUR_FILE_HERE.mp4' },
 ];
 
 const videoPlayer = document.getElementById('video-player');
