@@ -3,34 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Player</title>
+    <title>DOG & CHAINSAW</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1 id="anime-title">Chainsaw man</h1>
+            <div class="title-section">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <h1 id="anime-title">DOG & CHAINSAW</h1>
+            </div>
             <div class="anime-info">
                 <span id="episode-count">Episodes: Loading...</span>
             </div>
         </header>
 
-        <div class="player-section">
-            <div class="video-container">
-                <video id="video-player" controls>
-                    <source src="" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="video-info">
-                <h2 id="current-episode">Select an episode to start watching</h2>
-            </div>
-        </div>
+        <div class="main-content">
+            <div class="left-section">
+                <div class="player-section">
+                    <div class="video-container">
+                        <video id="video-player" controls>
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h2 id="current-episode">Select an episode to start watching</h2>
+                    </div>
+                </div>
 
-        <div class="episodes-section">
-            <h3>Episodes</h3>
-            <div id="episodes-list" class="episodes-grid">
-                <!-- Episodes will be loaded here -->
+                <div class="description-section">
+                    <h3>Description</h3>
+                    <p id="anime-description">
+                        Your anime description goes here. You can add details about the story, characters, and what makes this anime special.
+                    </p>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="episodes-section">
+                    <h3>Episodes</h3>
+                    <div id="episodes-list" class="episodes-grid">
+                        <!-- Episodes will be loaded here -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
