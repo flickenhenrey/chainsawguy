@@ -6,7 +6,7 @@ const episodesList = [
     { number: 3, name: 'MEOWYS WHEREABOUTS', file: 'https://files.catbox.moe/yiy0f8.mp4' },
     { number: 4, name: 'RESCUE', file: 'https://files.catbox.moe/pja70n.mp4' },
     { number: 5, name: 'GUN DEVIL', file: 'https://files.catbox.moe/rokxof.mp4' },
-    // { number: 6, name: 'EPISODE 6', file: 'https://files.catbox.moe/placeholder6.mp4' },
+    { number: 6, name: 'KILL DENJI', file: 'https://files.catbox.moe/dkj5vx.mp4' },
     // { number: 7, name: 'EPISODE 7', file: 'https://files.catbox.moe/placeholder7.mp4' },
     // { number: 8, name: 'EPISODE 8', file: 'https://files.catbox.moe/placeholder8.mp4' },
     // { number: 9, name: 'EPISODE 9', file: 'https://files.catbox.moe/placeholder9.mp4' },
